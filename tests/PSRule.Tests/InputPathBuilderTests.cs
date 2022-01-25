@@ -36,7 +36,7 @@ namespace PSRule
 
             builder.Add("./.azure-pipelines/*.yaml");
             actual = builder.Build();
-            Assert.True(actual.Length == 1);
+            Assert.True(actual.Length == 2);
 
             builder.Add("./.azure-pipelines/**/*.yaml");
             actual = builder.Build();
